@@ -2,7 +2,7 @@ import Item from "../models/items.models.js";
 
 
 export const AddItem = async(req,res) =>{
-    console.log("request recieved")
+    console.log("request recieved",req.body)
     try{
         const item = await Item.create(req.body)
         res.status(201).json({
