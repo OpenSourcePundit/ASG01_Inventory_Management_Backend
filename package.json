@@ -4,6 +4,7 @@
   "description": "Inventory management backend",
   "main": "server.js",
   "type": "module",
+  "engines": {"node": ">=16.0.0"},
   "scripts": {
     "dev": "nodemon backend/server.js"
   },
