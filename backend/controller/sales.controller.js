@@ -21,7 +21,7 @@ export const AddNewSale = async(req,res) =>{
         }
 
 
-        const newSaleItem = {item:item._id,price:item.price,quantity:req.body.quantity}
+        const newSaleItem = {item:item._id,price:item.price,quantity:req.body.quantity,itemName:item.name}
         // const itemFromInventory = await Sale.findOne(newSaleItem).populate("item")
         
         // inventory >sale ---true(save,updateinventory) --false (error)    

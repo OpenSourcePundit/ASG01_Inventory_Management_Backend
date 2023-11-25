@@ -25,7 +25,7 @@ export const UpdateItem = async(req,res) =>{
                 success:false,message:"Item not Found !"
             }) 
         }
-            const updatedItem = await Item.findByIdAndUpdate(req.params.id,req.body)
+            const updatedItem = await Item.findByIdAndUpdate(req.params.id,req.body,{new:true})
 
             res.status(201).json({
             success:true,
