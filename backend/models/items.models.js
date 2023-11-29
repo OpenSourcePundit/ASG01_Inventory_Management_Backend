@@ -15,7 +15,7 @@ const ItemSchema = new mongoose.Schema({
     },
     category:{
         type:String,
-        required:true,
+        
         enum:["Electronics", "Stationary", "Food", "Furniture", "Sports", "Fashion", "Home & Kitchen"],
         default:"Electronics",
     },
